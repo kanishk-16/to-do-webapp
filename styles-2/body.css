@@ -1,0 +1,12 @@
+body {
+    margin-top: 180px;
+    margin-bottom: 700px;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 0;
+    background-image: url('images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(10px);
+}

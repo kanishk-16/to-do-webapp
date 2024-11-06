@@ -1,0 +1,113 @@
+@font-face {
+        font-family: 'Horizon';
+        src: url('horizon.otf' );
+        font-weight: normal;
+        font-style: normal;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 50vh;
+    border: 1px;
+    border-color: black;
+    
+}
+.background{
+    font-family: 'Horizon', sans-serif;
+    font-size: 43px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    flex:1;
+    color: rgb(255, 255, 255);
+    margin-left: 15px;
+}
+.right-section{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-right: 100px;
+    width: 300px;
+    height: 300px;
+}
+.First-name{
+    width: 120px;
+    outline: none;
+    border: 1px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 7px;
+    border-radius: 10px;
+    box-shadow: 0 1px 5px rgba( 0, 0, 0, 0.25);
+    
+}
+.First-name:focus{
+    border: 1px solid grey;
+}
+.Last-name{
+    width: 120px;
+    outline: none;
+    border: 1px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 7px;
+    border-radius: 10px;
+    box-shadow: 0 1px 5px rgba( 0, 0, 0, 0.25);
+}
+.Last-name:focus{
+    border: 1px solid grey;
+}
+.Email{
+    display:block;
+    width: 252px;
+    outline: none;
+    border: 1px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 7px;
+    border-radius: 10px;
+    box-shadow: 0 1px 5px rgba( 0, 0, 0, 0.25);
+}
+.Email:focus{
+    border: 1px solid grey;
+}
+.Sign-up{
+    display: block;
+    width: 260px;
+    background-color: rgb(47, 127, 231);
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    border-radius: 8px;
+    border: 0;
+    align-content: center;
+}
+.Sign-up:hover{
+    cursor: pointer;
+    box-shadow: 3px 3px 9px rgba(0,0,0,0.17);
+}
+.Sign-up:active{
+    opacity: 0.5;
+}
+.img{
+    margin-bottom: 20px;
+    margin-left: 30%;
+    display: flex;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: aliceblue;
+    justify-content: center;
+}
+
+
+    
