@@ -13,15 +13,19 @@
         </script>
         <div class="container">
           <div class="background">
-            <p>Sign Up to Proceed !</p>
+            <p class="head-text">Sign Up to Proceed !</p>
+            <p class="brief-description">Welcome! Ready to organize your day? Sign up now to start managing your tasks effortlessly. Let's make productivity simple and rewarding!🧡</p>
           </div>
           <div class="right-section">
             <img class="img" src="styles-2/images/fcce92b6dd2ebb5259426a424a6f983d.jpg">
-            <div class="First-name-and-last-name">
-              <input class="First-name" type="text" placeholder="First Name">
-              <input class="Last-name" type="text" placeholder="Last Name">
+            <div class="input-container">
+              <input id="name" class="name" type="text" required>
+              <label for="name">Name</label>
             </div>
-            <input class="Email" type="text" placeholder="Email">
+            <div class="input-container">
+              <input id="email" class="Email" type="email" required>
+              <label for="email">Email</label>
+            </div>
             <button class="Sign-up" onclick="redirect()">
                 Sign-up
             </button>

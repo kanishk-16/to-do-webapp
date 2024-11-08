@@ -16,7 +16,16 @@
     border-color: black;
     
 }
-.background{
+.brief-description{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    flex:1;
+    color: rgb(255, 255, 255);
+    margin-left: 15px;
+}
+.head-text{
     font-family: 'Horizon', sans-serif;
     font-size: 43px;
     margin-top: 5px;
@@ -30,6 +39,7 @@
     justify-content: center;
     align-items: center;
     margin-right: 100px;
+    margin-left: 110px;
     width: 300px;
     height: 300px;
 }
@@ -47,26 +57,10 @@
 .First-name:focus{
     border: 1px solid grey;
 }
-.Last-name{
-    width: 120px;
-    outline: none;
-    border: 1px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 7px;
-    border-radius: 10px;
-    box-shadow: 0 1px 5px rgba( 0, 0, 0, 0.25);
-}
-.Last-name:focus{
-    border: 1px solid grey;
-}
 .Email{
-    display:block;
     width: 252px;
     outline: none;
     border: 1px;
-    margin-top: 15px;
-    margin-bottom: 15px;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 7px;
@@ -80,8 +74,8 @@
     display: block;
     width: 260px;
     background-color: rgb(47, 127, 231);
+    font-family: 'horizon';
     font-size: 18px;
-    font-weight: bold;
     color: white;
     padding-top: 14px;
     padding-bottom: 14px;
@@ -107,6 +101,43 @@
     border-width: 2px;
     border-color: aliceblue;
     justify-content: center;
+}
+
+.input-container{
+    position: relative;
+    margin-bottom: 24px;
+}
+
+input[type="text"],input[type="email"]{
+    width:100%;
+    padding: 10px 5px;
+    font-size: 16px;
+    border: 1px solid black;
+    border-radius: 5px;
+    outline: none;
+}
+
+label {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    color: #888;
+    font-size: 16px;
+    pointer-events: none;
+    transform: translateY(-50%);
+    transition: 0.2s ease all;
+    font-family: 'Horizon';
+    font-size: 11px;
+}
+
+input:focus ~ label
+{
+    top: -1px;
+    font-size: 12px;
+    color: black;
+    background-color: white;
+    padding: 0 5px;
+    border-radius: 2px;
 }
 
 
