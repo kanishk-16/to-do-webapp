@@ -2,7 +2,6 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body.dashboard-body {
@@ -95,13 +94,34 @@ body.dashboard-body {
     text-align: center;
     color: white;
     margin-bottom: 20px;
+    margin-right: 230px;
+    margin-right: px;
+    align-content: center;
+    justify-content: center;
+}
+
+.header button {
+    display: block;
+    height: 50px;
+    width: 60px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.header{
+    display: flex;
 }
 
 .Your-tasks {
     color: white;
+    font-weight: bold;
+    font-size: 35px;
     margin-bottom: 15px;
 }
 
+.description{
+    color: white;
+}
 .task-container {
     margin-top: 30px;
 }
