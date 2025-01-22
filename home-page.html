@@ -1,9 +1,57 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Dashboard!</title>
-    </head>
-    <body>
-        <p>Hello!</p>
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - To-Do App</title>
+    <link rel="stylesheet" href="styles-2/dashboard.css">
+</head>
+<body class="dashboard-body">
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <h3>Menu</h3>
+        </div>
+        <nav class="sidebar-nav">
+            <a href="#" class="nav-item active">
+                <span class="nav-icon">📊</span>
+                Dashboard
+            </a>
+            <a href="#" class="nav-item">
+                <span class="nav-icon">📅</span>
+                Upcoming
+            </a>
+            <a href="#" class="nav-item">
+                <span class="nav-icon">📆</span>
+                Calendar
+            </a>
+        </nav>
+    </div>
+    <div class="main-content">
+        <div class="container">
+            <header class="header">
+                <h1>Welcome to your Dashboard</h1>
+                <button onclick="window.location.href='landing-page.html'">Logout</button>
+            </header>
+            
+            <section class="task-container">
+                <h2 class="Your-tasks">Your Tasks</h2>
+                <div class="task-list">
+                    <!-- Dynamically populated list of tasks -->
+                </div>
+                <button class="add-task-btn" onclick="showTaskModal()">Add Task</button>
+            </section>
+        </div>
+    
+        <!-- Add Task Modal -->
+        <div id="taskModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeTaskModal()">×</span>
+                <h3>Add New Task</h3>
+                <input type="text" id="new-task" placeholder="Task description" required>
+                <button onclick="addTask()">Add Task</button>
+            </div>
+        </div>
+    </div>
+    
+</body>
 </html>
